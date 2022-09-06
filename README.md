@@ -1,0 +1,2 @@
+# To-Do-App-With-Speech-Recognition
+This project is based on the idea of a simple to do listing app, however the main difference and innovation from other to-do apps out there is that in this one you don't have to hardly type in the name of yout task but you can just press the microphone button and say it, the app will catch what's said and automatically create a task with it. I will probably add sokme extra features on the future that will make it even better such as making the keyboard and option as well.
