@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Crayon;
+  src: url(./fonts/ColoredCrayons-7wPR.ttf);
+}
+
+body {
+  min-width: 350px !important;
+  background: rgb(49, 49, 61);
+  background: radial-gradient(
+    circle,
+    rgba(49, 49, 61, 1) 0%,
+    rgba(79, 67, 69, 1) 85%
+  );
+}
+
+#title {
+  display: block;
+  text-align: center;
+  font-family: Crayon;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#App {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 500px;
+  background-color: #ccc;
+  margin: 0px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 3px -3px 5px #333;
+}
+
+#productivity_panel {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#tasks_wrapper {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: #f9e79f;
+  margin: 0px auto;
+  margin-top: 10px;
+  padding: 15px 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#mic {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  font-size: 35px;
+  margin: 0px auto;
+  border-radius: 999px;
+  padding: 25px 31px;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease;
+  background-color: #4d5656;
+  color: #fff;
+  box-shadow: 3px 3px 2px #333;
+}
+
+#mic:active {
+  font-size: 37px;
+}
+
+#listening {
+  text-align: center;
+  font-size: 15px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.item {
+  position: relative;
+  left: 30px;
+  font-size: 25px;
+  font-family: Crayon;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #333;
+}
+
+.item div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.check,
+.xmark {
+  cursor: pointer;
+}
+
+.check {
+  color: green;
+}
+
+.xmark {
+  color: red;
+}
+
+#btn-control {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  right: 50px;
+}
+
+#how_to_use_board {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  font-family: Crayon;
+  letter-spacing: 1px;
+  margin: 50px auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Mediaqueries */
+
+@media (max-width: 375px) {
+  #App {
+    border-radius: 0px;
+    width: 100%;
+  }
+}
